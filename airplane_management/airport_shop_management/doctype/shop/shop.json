@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{shop_name}-{####}",
+ "creation": "2024-04-21 22:57:28.593645",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shop_number",
+  "shop_name",
+  "tenant",
+  "area",
+  "column_break_xyag",
+  "rent_amount",
+  "date_of_expiry",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "shop_number",
+   "fieldtype": "Data",
+   "label": "Shop Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shop_name",
+   "fieldtype": "Data",
+   "label": "Shop Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "label": "Tenant",
+   "options": "Tenant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rent Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status ",
+   "options": "Occupied\nAvailable",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xyag",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-22 11:53:13.256075",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Shop",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

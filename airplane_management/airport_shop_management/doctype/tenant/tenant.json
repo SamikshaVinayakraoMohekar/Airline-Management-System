@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-04-21 22:45:44.036939",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_nbrq",
+  "name1",
+  "date_of_birth",
+  "passport_number",
+  "column_break_zclh",
+  "contact_number",
+  "email",
+  "nationality"
+ ],
+ "fields": [
+  {
+   "default": "India",
+   "fieldname": "column_break_nbrq",
+   "fieldtype": "Column Break",
+   "options": "India\nPakisthan\nGermany\nChina\n\n"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Tenant Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Nationality",
+   "options": "Indian\nPakisthan\nGermany\nChina"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "column_break_zclh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-22 11:45:08.153441",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Tenant",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

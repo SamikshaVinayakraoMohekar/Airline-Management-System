@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Me Colors</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        #color-rectangle {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-rectangle" style="background-color: {% if frappe.form_dict.color %}{{ frappe.form_dict.color }}{% else %}black{% endif %}"></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-22 11:16:17.787599",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ticket_number",
+  "passenger_name",
+  "column_break_fwwe",
+  "flight",
+  "gate_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "ticket_number",
+   "fieldtype": "Data",
+   "label": "Ticket Number"
+  },
+  {
+   "fieldname": "passenger_name",
+   "fieldtype": "Data",
+   "label": "Passenger Name"
+  },
+  {
+   "fieldname": "flight",
+   "fieldtype": "Link",
+   "label": "Flight",
+   "options": "Flight"
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Gate Number"
+  },
+  {
+   "fieldname": "column_break_fwwe",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-22 11:19:56.879684",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

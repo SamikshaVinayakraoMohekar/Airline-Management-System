@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-21 23:19:11.340366",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "role",
+  "flight"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "pilot\nco-pilot\nflight attendant"
+  },
+  {
+   "fieldname": "flight",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Flight",
+   "options": "Flight"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-22 12:03:57.859273",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Crew Member",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

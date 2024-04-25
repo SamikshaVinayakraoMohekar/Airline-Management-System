@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-04-20 23:00:14.919330",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name",
+  "date_of_birth"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Airplane Ticket",
+   "link_fieldname": "Passenger"
+  }
+ ],
+ "modified": "2024-04-21 01:04:05.452866",
+ "modified_by": "Administrator",
+ "module": "Airplane Management",
+ "name": "Flight Passenger",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

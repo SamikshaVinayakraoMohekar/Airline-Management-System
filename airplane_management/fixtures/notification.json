@@ -1,0 +1,43 @@
+[
+ {
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": null,
+  "date_changed": "date_of_departure",
+  "days_in_advance": 1,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "Airplane Flight",
+  "enabled": 1,
+  "event": "Days Before",
+  "is_standard": 1,
+  "message": "Add your message here",
+  "message_type": "Markdown",
+  "method": null,
+  "modified": "2024-04-21 15:48:22.474942",
+  "module": "Airplane Management",
+  "name": "Flight Departure Notification",
+  "print_format": null,
+  "property_value": null,
+  "recipients": [
+   {
+    "bcc": null,
+    "cc": null,
+    "condition": null,
+    "parent": "Flight Departure Notification",
+    "parentfield": "recipients",
+    "parenttype": "Notification",
+    "receiver_by_document_field": null,
+    "receiver_by_role": "System Manager"
+   }
+  ],
+  "send_system_notification": 0,
+  "send_to_all_assignees": 0,
+  "sender": null,
+  "sender_email": null,
+  "set_property_after_alert": null,
+  "slack_webhook_url": null,
+  "subject": "Departs in 24 hours!",
+  "value_changed": null
+ }
+]

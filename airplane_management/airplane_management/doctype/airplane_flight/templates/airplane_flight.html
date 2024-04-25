@@ -1,0 +1,15 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ doc.name |e }}</h1>
+<h3>{{ _("Flight Details") }}</h3>
+<div>
+    <b>{{ _("Airline") }}</b>: {{ doc.airplane }}<br>
+    {{ doc.source_airport_code }} &rarr; {{ doc.destination_airport_code }}<br>
+    {{ frappe.utils.format_date(doc.date_of_departure, "d MMMM, YYYY") }} | {{ doc.time_of_departure }}<br>
+    Duration:{{ frappe.utils.format_duration(doc.duration) }}<br>
+    <a class="btn btn-primary btn-md" href="http://airline.com:8004/airline-web-form/new">
+        {{ _("Book a Flight") }}
+    </a>
+</div>
+{% endblock %}
